@@ -1,0 +1,41 @@
+ installation:
+
+>>npm create vite@latest .
+>>npm install
+>>npm install tailwindcss @tailwindcss/vite        : using  website
+>>npm install axios                :to intract Backend to frontend through userAPI
+>>npm install react-router-dom
+>>npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+>>npm i react-chartjs-2 chart.js     :for chart create web->react-chart2.js
+>>npm i react-toastify            :for pop-up message show
+
+>>npm i --save antd                               :for best ui work fastly
+>> npm i @ant-design/v5-patch-for-react-19        :for search web->ant-design patch  and
+import '@ant-design/v5-patch-for-react-19'        :import on project page
+>>npm install --save-dev @faker-js/faker          :for dummy json data and import it
+>>npm install lucide-react                        :for icons
+>>npm i nanoid                                :for unique id
+>>npm i react-syntax-highlighter           :for text highliter
+>>npm install animate.css --save  :for animation
+>>npm i react-photo-editor    :for photo editor
+
+
+
+
+Backend install:
+>>npm init -y
+>>npm install express cors body-parser mongoose
+>>npm install nodemon 
+
+     "start":"node app.js",
+     "dev":"nodemon app.js" 
+>>npm install bcryptjs           for data secure -ecrypted/bcrypted ,10salt
+>>npm install dotenv             for secure data like database,port,etc
+>>npm install path                for Upload image in database through multer.
+>>npm install multer
+>>npm install jsonwebtoken        for reduce redundancy when access data to client site
+>>npm install passport passport-local passport-local-mongoose
+
+
+------------------------------------------------------------------------------------
+ref:'table_name'    jisse data match karna hai aur usper operation perform karna hai
