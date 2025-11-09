@@ -74,7 +74,8 @@ Learn to design visually appealing, responsive websites with clean CSS.
     description:
       "JavaScript adds interactivity to your websites. You can respond to user actions, manipulate the DOM, and even communicate with servers using APIs.",
     examples: [
-      `document.getElementById('demo').innerHTML = 'Hello JavaScript!';
+      `document.getElementById('demo')
+      .innerHTML = 'Hello JavaScript!';
         console.log('JavaScript Loaded');`,
     ],
     videoUrl: "https://www.youtube.com/embed/L72fhGm1tfE",
@@ -208,7 +209,10 @@ Example:
         const li = document.createElement("li");
         li.innerHTML = 
           {task}
-          <button class="delete-btn" onclick="deleteTask({index})">Delete</button>
+          <button class="delete-btn" 
+          onclick="deleteTask({index})">
+          Delete
+        </button>
         ;
         taskList.appendChild(li);
       });
@@ -350,10 +354,21 @@ Develop RESTful APIs that serve data and handle business logic for web apps.
       "MongoDB is a document-oriented NoSQL database used for storing large volumes of data in JSON-like documents.",
     examples: [
       `const mongoose = require('mongoose');
-      mongoose.connect('mongodb://localhost:27017/myDB');
-      const UserSchema = new mongoose.Schema({ name: String, email: String });
-      const User = mongoose.model('User', UserSchema);
-      User.create({ name: 'Tasauvar', email: 'test@example.com' })`,
+      mongoose
+      .connect(
+      'mongodb://localhost:27017/myDB'
+      );
+      const UserSchema = new mongoose
+      .Schema({
+       name: String, 
+       email: String 
+       });
+      const User = mongoose
+      .model('User', UserSchema);
+      User.create({
+       name: 'Tasauvar', 
+       email: 'test@example.com' 
+       })`,
     ],
     videoUrl: "https://www.youtube.com/embed/L72fhGm1tfE",
     content: [`
@@ -430,18 +445,25 @@ Build dynamic, efficient components with clean and reusable state management.
     examples: [
       `// Express Example
       app.get('/api/users', (req, res) => res.json(users));
-      app.post('/api/users', (req, res) => { users.push(req.body); res.send('User added'); });
+      app.post('/api/users', (req, res) =>{ 
+        users.push(req.body); 
+        res.send('User added'); 
+      });
       
       // React Fetch Example
       useEffect(()=> {
-        fetch('/api/users').then(res=>res.json()).then(data=>setUsers(data));
+        fetch('/api/users')
+        .then(res=>res.json())
+        .then(data=>setUsers(data));
       }, []);`,
     ],
     videoUrl: "https://www.youtube.com/embed/L72fhGm1tfE",
     content: [`
 Overview:
 
-A REST API defines a set of rules for creating web services that allow communication between client (frontend) and server (backend). It uses HTTP methods for data transfer.
+A REST API defines a set of rules for creating web services
+ that allow communication between client (frontend) and server (backend).
+  It uses HTTP methods for data transfer.
 
 Key Points:
 
